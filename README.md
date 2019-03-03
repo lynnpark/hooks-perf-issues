@@ -1,5 +1,5 @@
 ## UPDATE
-@gearon pointed out you can use the function updater form so as to avoid breaking memoization to deliver a new callback:
+Dan from the React team pointed out you can use the function updater form so as to avoid breaking memoization to deliver a new callback:
 
 ```js
 const handleClick = useCallback(() => {
