@@ -8,11 +8,10 @@
     "react-scripts": "2.1.5"
   },
   "scripts": {
-    "build-hooks": "REACT_APP_HOOKS=1 react-scripts build",
     "build-class": "REACT_APP_HOOKS=0 react-scripts build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build-hooks": "REACT_APP_HOOKS=1 react-scripts build",
+    "build-hooks-optimized": "REACT_APP_HOOKS=2 react-scripts build",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
