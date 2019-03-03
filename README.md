@@ -1,3 +1,14 @@
+## UPDATE
+@gearon pointed out you can use the function updater form so as to avoid breaking memoization to deliver a new callback:
+
+```js
+const handleClick = useCallback(() => {
+  setIsYellow(isYellow => !isYellow);
+}, []);
+```
+
+This solves the issue this repo is demonstrating and will deliver identical performance to class bound handlers. 
+
 ## Hooks performance test
 
 Here is an example of how I have found hooks can occasionally cause performance problems. This does not mean that hooks should be avoided, just that performance with hooks needs to managed carefully.
@@ -15,7 +26,7 @@ yarn serve
 
 Click on a blue square. Eventually the yellow square next to it should turn white.
 
-Notice clicks take roughly 940-1090ms to propagate
+Notice clicks take roughly 1s to propagate
 
 <img src="hooks.png" />
 
