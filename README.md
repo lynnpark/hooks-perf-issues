@@ -9,6 +9,8 @@ const handleClick = useCallback(() => {
 
 This solves the issue this repo is demonstrating and will deliver identical performance to class bound handlers. 
 
+He also pointed out a few ways to deliver micro optimizations as well. I feel like some of this stuff can get confusing for folks so I will pull this all together in an article soon.
+
 ## Hooks performance test
 
 Here is an example of how I have found hooks can occasionally cause performance problems. This does not mean that hooks should be avoided, just that performance with hooks needs to managed carefully.
