@@ -7,7 +7,8 @@ This demo was modelled off a real world performance issue I was tasked to solve 
 ## Run as hook
 
 ```
-yarn start-hooks
+yarn build-hooks
+yarn serve
 ```
 
 <img src="example.png" />
@@ -21,7 +22,8 @@ Notice clicks take roughly 940-1090ms to propagate
 ## Run as class
 
 ```
-yarn start-class
+yarn build-class
+yarn serve
 ```
 
 Click on a blue square. Again eventually the yellow square next to it should turn white.
